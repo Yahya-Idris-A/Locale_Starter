@@ -8,4 +8,7 @@
     <string name="help_text">"Если вам нужна помощь, обратитесь в нашу службу поддержки. "</string>
     <string name="dial_log_message">"Не удается разрешить приложение для намерения ACTION_DIAL. "</string>
     <string name="expired_label">"Дата истечения срока: "</string>
+    <string name="unit_price">Цена за единицу:</string>
+    <string name="unit_price_100">" Цена за 100 единиц:"</string>
+    <string name="mata_uang">RUB</string>
 </resources>

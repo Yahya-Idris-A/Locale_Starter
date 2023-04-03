@@ -8,4 +8,7 @@
     <string name="help_text">إذا كنت بحاجة إلى مساعدة ، فاتصل بقسم الدعم لدينا.</string>
     <string name="dial_log_message">لا يمكن حل التطبيق لـ ACTION_DIAL Intent.</string>
     <string name="expired_label">"منتهي الصلاحية: "</string>
+    <string name="unit_price">السعر لكل وحدة:</string>
+    <string name="unit_price_100">السعر لكل 100 وحدة:</string>
+    <string name="mata_uang">SAR</string>
 </resources>

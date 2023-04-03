@@ -23,4 +23,13 @@
 
     <!-- Do not translate.  -->
     <string name="dial_log_message">Can\'t resolve app for ACTION_DIAL Intent.</string>
+
+    <!-- Price Per Unit. -->
+    <string name="unit_price">Price Per Unit:</string>
+
+    <!-- Price Per 100 Unit. -->
+    <string name="unit_price_100">Price Per 100 Units:</string>
+
+    <!-- Currency. -->
+    <string name="mata_uang">USD</string>
 </resources>

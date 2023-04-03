@@ -8,4 +8,7 @@
     <string name="help_text">Jika butuh bantuan, silahkan hubungi Departemen Pendukung kami</string>
     <string name="dial_log_message">"Tidak dapat menyelesaikan aplikasi untuk Maksud ACTION_DIAL. "</string>
     <string name="expired_label">"Tanggal kadaluwarsa: "</string>
+    <string name="unit_price">Harga Per Unit:</string>
+    <string name="unit_price_100">Harga Per 100 Unit:</string>
+    <string name="mata_uang">IDR</string>
 </resources>

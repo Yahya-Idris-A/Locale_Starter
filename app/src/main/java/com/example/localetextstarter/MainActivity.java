@@ -9,6 +9,8 @@ import android.provider.Settings;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -19,10 +21,18 @@ import java.util.concurrent.TimeUnit;
 
 public class MainActivity extends AppCompatActivity {
 
+    private EditText hargaSatuan;
+    private TextView harga100;
+    Button submitButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        hargaSatuan = findViewById(R.id.input_harga);
+        harga100 = findViewById(R.id.harga_100pack);
+        submitButton = findViewById(R.id.submit);
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -39,6 +49,21 @@ public class MainActivity extends AppCompatActivity {
         String formatDate = DateFormat.getDateInstance().format(myDate);
         TextView expiredTextView = findViewById(R.id.date);
         expiredTextView.setText(formatDate);
+
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(hargaSatuan.getText().toString().length() == 0) {
+                    harga100.setText("0");
+                }
+                else {
+                    int harga = Integer.parseInt(hargaSatuan.getText().toString());
+                    int hargaTotal = harga * 100;
+
+                    harga100.setText(String.valueOf(hargaTotal));
+                }
+            }
+        });
     }
 
     /**
